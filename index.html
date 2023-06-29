@@ -13,22 +13,44 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 				<!--<div class="backtotop" style="display: block;">
-					<a href="#header"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+					<a href="#header"><i class="fa fa-arrow-up fas fa-arrow-up" aria-hidden="true"></i></a>
 				  </div> -->
+				 <!-- Scroll to top button-->
+				 <button
+				 type="button"
+				 class="btn btn-danger btn-floating btn-lg"
+				 id="btn-back-to-top"
+				 > Top
+		   <i class="fa fa-chevron-up"></i>
+		 </button>
+		 <section id="header" class="main">
+			<div class="spotlight">
+				<div class="content">
+					<header class="major">
+						<h1>Hello! I'm Kavita Javalagi</h1>
+					</header>
+					<h2 class ="namefont">Product | User Experience | Analytics  </h2>
+	
+				</div>
+				<span class="image"><img src="images/Profile.jpg" alt="Kavita's Profile photo"></span>
+				
+			</div>
+		</section>
 				<!-- Header -->
-				<header id="header" class="alt">
+				<!-- <header id="header" class="alt">
 						<span class="image"><img class="Introimage"src="images/Profile.jpg" alt="" /></span>
 						<h1>Hello!</h1>
 						<h3 class ="namefont">I am Kavita Javalagi
-						</h3><h2 class ="namefont">An aspiring Product Manager!</h2>
-					</header>
+						</h3><h2 class ="namefont">Product | User Experience | Analytics | Development </h2>
+					</header> -->
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
 							<li><a href="#intro" class="active">About me</a></li>
 							<li><a href="#first">Projects</a></li>
 							<li><a href="#second">Resume</a></li>
-							<li><a href="#cta">Education</a></li>
+							<li><a href="#third">Education</a></li>
+							<li><a href="#fourth">Skillset</a></li>
 						</ul>
 					</nav>
 
@@ -42,7 +64,7 @@
 										<header class="major">
 											<h2>About me</h2>
 										</header>
-										<p>I am a results-driven IT professional with 3+ years of experience in business analysis and software development. Currently pursuing a Masters in Information Systems with a concentration in Digital Innovation at Georgia State University, I have gained valuable insights into leveraging technology to solve business problems using a data-driven approach.</p>
+										<p>I am a results-driven IT professional with 3+ years of experience in product management and software development. Currently pursuing a Masters in Information Systems with a concentration in Digital Innovation at Georgia State University, I have gained valuable insights into leveraging technology to solve business problems using a data-driven approach.</p>
 										<p>Throughout my career, I have been actively involved in all phases of solution development, engaging with stakeholders, gathering requirements, and articulating user stories. I have collaborated with multifunctional teams, facilitating user acceptance tests to ensure timely issue resolution and product enhancements while supporting the Product Owner. 
 										At Tata Consultancy Services, I successfully launched and maintained scalable digital platforms for Microsoft events, serving large live audiences. As a full stack developer, I handled end-to-end execution, including testing, website deployment, and live support during events. This experience provided me with a deep understanding of Azure Platform as a Service, supporting the complete application lifecycle.  </p>
 										<p>With my diverse skill set in business analysis, software development, and product management, I am excited to contribute to your organization's success. I am passionate about leveraging technology to solve complex challenges and deliver exceptional products.</p>
@@ -107,6 +129,7 @@
 										<ul>
 											<li>Developed, tested, and launched scalable and flexible software products using C# and ASP.NET catering to global audiences of up to 15,000 live attendees on Azure Cloud Platform.</li>
 											<li>Led QA team in performing comprehensive User Acceptance Testing on Azure DevOps, including web accessibility, functional, unit, and cross-browser testing. Achieved a 25% reduction in customer tickets through effective test case implementation.</li>
+										    <li>Devised a plan for examining API metrics related to latency, consumption, and uptime, which resulted in a 90% improvement in the website's performance.</li>
 										</ul>
 									  </div>
 									</div>
@@ -119,32 +142,48 @@
 							</section>
 
 						<!-- Third section -->
-							<section id="cta" class="main">
+							<section id="third" class="main">
 								<header class="major">
 									<h2>Education</h2>
 								</header>
-							<div class="content row">
-								<div class="col-3">
-									<p class="edu">January 2023 - December 2023 (Expected)</p>
-								</div>
-								</br>
-								<div class="col-9">
-			                        <p class="edu"><strong>J. Mack Robinson College of Business - Georgia State University | Atlanta, GA</strong></p>
-									<p>Master of Science, Information Systems - Digital Innovation | GPA: 4.15</p>	
+					
+						<div class="gtr-uniform content row">
+							<div class="col-7">
+								<div>
+								<p class="edu"><strong>J. Mack Robinson College of Business - Georgia State University | Atlanta, GA</strong></p>
+								<p class="edu">Master of Science, Information Systems - Digital Innovation | GPA: 4.15</p>	
+								<p class="edu">January 2023 - December 2023 (Expected)</p>
+							    </div></br>
+								<div>
+							        <p class="edu"><strong>Visvesvaraya Technological University | Belgaum, India</strong></p>
+									<p class="edu">Bachelor of Engineering, Computer Science </p>
+									<p class="edu">August 2015 - June 2019</p>
 								</div>
 							</div>
-							<div class="content row">
-								<div class="col-3">
-									<p class="edu">August 2015 - June 2019</p></br>
-								</div>
-								<div class="col-9">
-									<p class="edu"><strong>Visvesvaraya Technological University | Belgaum, India</strong></p>
-									<p>Bachelor of Engineering, Computer Science </p>
-								</div>
-                            </div>
-							
+						   <div class="col-5">
+							   <img class="image fit eduimg" style="width: 400px;" src="images/edu.jpg" alt="" />
+						    </div>
+						</div>
 							</section>	
-						<!-- Fourth section -->
+								<!-- Fourth Section -->
+								<section id="fourth" class="main">
+									<header class="major">
+										<h2>Skills and Certifications</h2>
+									</header>
+									<div class="box alt">
+										<p class="edu"><strong>Business:</strong> Design Thinking, Wireframing, Prioritization, UI/UX, Agile Product Development, Stakeholder Management, Requirement Analysis, Azure DevOps, MS Office</p>
+										<p class="edu"><strong>Technical:</strong> SQL, C#, ASP.NET, Python, HTML5, CSS, JavaScript, Tableau, Power BI</p>
+										<p class="edu"><strong>Cloud Platforms:</strong> MS Azure</p>
+										<p class="edu"><strong>Certifications:</strong>
+											<ul>
+											<li><a target="_blank" href="https://bcert.me/sazppvifn">Certified ScrumMaster® (CSM®)</a></li>
+											<li><a target="_blank" href="https://www.credly.com/badges/e80b5776-1b4f-4eef-8950-a8cc2dfa1ad7/public_url">IBM: Enterprise Design Thinking Practitioner</a></li>
+											<li><a target="_blank" href="https://www.credly.com/badges/fcd94d05-faa8-482b-ab78-f02fd08f2540/public_url">Microsoft Certified: Azure Developer Associate</a></li>
+											<li><a target="_blank" href="https://www.credly.com/badges/c9d5fa18-0770-47c5-bae5-b5431ed3ab30/public_url">Microsoft Certified: Azure Fundamentals</a></li>
+										</ul>
+									</div>
+									</section>
+						<!-- Fifth section -->
 							<section class="main">
 								<header class="major">
 									<h2>Beyond work</h2>
@@ -161,8 +200,7 @@
 							</section>
 
 					</div>
-
-				<!-- Footer -->
+									<!-- Footer -->
 					<footer id="footer">
 						<section class="copyright">
 							<ul class="icons footericons">

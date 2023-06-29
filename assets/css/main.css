@@ -826,6 +826,13 @@ h1{
 
 		@media screen and (max-width: 1280px) {
 
+			.row > .col-5 {
+				width: 25%;
+			}
+			.eduimg{
+				width: 300px !important;
+			}
+
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -1073,6 +1080,10 @@ h1{
 
 			.row > .col-3 {
 				width: 50%;
+			}
+
+			.row > .col-7 {
+				width: 100%;
 			}
 
 			.row {
@@ -2657,6 +2668,8 @@ h1{
 
 		header.major h2 {
 			font-size: 2em;
+			font-weight: 500;
+
 		}
 
 			header.major h2:after {
@@ -3814,3 +3827,14 @@ h1{
 		box-shadow: 0 31px 35px rgba(0, 0, 0, 0.1);
     }
 	 
+	#btn-back-to-top {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		display: none;
+		background-color: #d1485f;
+		min-width: 0.5em;
+		border-radius: 10%;
+		box-shadow: none;
+
+	  }
