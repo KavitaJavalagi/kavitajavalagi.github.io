@@ -138,25 +138,49 @@ h1{
 
 		@media screen and (max-width: 1680px) {
 
-			body, input, select, textarea, .namefont {
+			body, input, select, textarea, .namefont  {
 				font-size: 14pt;
 			}
 
+			
 		}
 
 		@media screen and (max-width: 1280px) {
 
-			body, input, select, textarea, .namefont {
+			body, input, select, textarea, .namefont, .name, .bio, .head {
 				font-size: 12pt;
 			}
+			.mailbutton{
+				padding: 0em 0em 2em 0em;
+				}
 
 		}
 
+		@media screen and (max-width: 600px) {
+			
+			.mailbutton{
+				padding: 0em 0em 2em 0em;
+				}
+
+				.name, .bio{
+					font-size: 40px !important;
+				}
+		}
+
+
 		@media screen and (max-width: 360px) {
 
-			body, input, select, textarea, .namefont {
+			body, input, select, textarea, .namefont, .name, .bio, .head {
 				font-size: 11pt;
 			}
+
+			
+			 .name, .bio{
+				font-size: 40px !important;
+			}
+			.mailbutton{
+				padding: 0em 0em 2em 0em;
+				}
 
 		}
 
@@ -3071,7 +3095,7 @@ h1{
 /* Header */
 
 	#header {
-		padding: 5em 5em 1em 5em ;
+		padding: 5em 5em 5em 0em ;
 		text-align: center;
 	}
 
@@ -3126,7 +3150,7 @@ h1{
 		@media screen and (max-width: 1280px) {
 
 			#header {
-				padding: 4em 4em 0.1em 4em ;
+				padding: 4em 4em 4em 0.1em;
 			}
 
 				#header.alt {
@@ -3838,3 +3862,28 @@ h1{
 		box-shadow: none;
 
 	  }
+	  .head {
+		color: rgb(100, 255, 218);
+		margin: 0px 0px 20px 3px;
+		font-size: 16px;
+		font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+		font-weight: normal;
+		text-align: left;
+		line-height: 1.2;
+		font-weight: 700;
+	  }
+	  .name {
+		margin: 0px;
+		text-align: left;
+		font-size: 80px;
+		line-height: 1.2;
+		font-weight: 700;
+	}
+	.bio {
+		color: rgb(136, 146, 176);
+		margin: 0px 0px 10px;
+		text-align: left;
+		font-size: 80px;
+		line-height: 1.2;
+		font-weight: 700;
+	}
