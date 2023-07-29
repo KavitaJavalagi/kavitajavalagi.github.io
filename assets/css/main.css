@@ -154,6 +154,8 @@ h1{
 				padding: 0em 0em 2em 0em;
 				}
 
+				
+
 		}
 
 		@media screen and (max-width: 600px) {
@@ -164,6 +166,10 @@ h1{
 
 				.name, .bio{
 					font-size: 40px !important;
+				}
+
+				.demo img{
+					width: 300px !important;
 				}
 		}
 
@@ -855,6 +861,11 @@ h1{
 			}
 			.eduimg{
 				width: 300px !important;
+			}
+
+			.techarch{
+				width: 300px !important;
+				height: 150px !important;
 			}
 
 			.row {
@@ -1602,7 +1613,7 @@ h1{
 		}
 
 		@media screen and (max-width: 480px) {
-
+			
 			.row > .col-3 {
 				width: 100%;
 			}
@@ -1612,7 +1623,7 @@ h1{
 				box-sizing: border-box;
 				align-items: stretch;
 			}
-
+			
 				.row > * {
 					box-sizing: border-box;
 				}
@@ -1965,6 +1976,7 @@ h1{
 			.button {
 				min-width: 0;
 			}
+			
 
 		}
 
@@ -3886,4 +3898,34 @@ h1{
 		font-size: 80px;
 		line-height: 1.2;
 		font-weight: 700;
+	}
+
+	.techarch img {
+		width: 650px;
+		height: 200px;
+	}
+
+	.demo{
+		width: 200px !important;
+		height: 200px !important;
+
+	}
+
+	@media screen and (max-width: 540px) {
+		.techarch img  {
+			width: 200px !important;
+			height: 100px !important;
+		}
+		.demo img{
+			width: 200px !important;
+
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		
+		.demo img{
+			width: 600px !important;
+
+		}
 	}
