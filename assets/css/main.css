@@ -3762,10 +3762,7 @@ h1{
 					margin-bottom: 3em;
 				}
 
-				#footer .copyright {
-					text-align: left;
-				}
-
+			
 		}
 
 		@media screen and (max-width: 736px) {
@@ -3920,6 +3917,9 @@ h1{
 			width: 200px !important;
 
 		}
+		.tableauViz{
+			width: 300px !important;
+		}  
 	}
 
 	@media screen and (min-width: 768px) {
@@ -3928,6 +3928,7 @@ h1{
 			width: 600px !important;
 
 		}
+		
 	}
 	
 	  .grid-container {
@@ -3978,4 +3979,17 @@ h1{
 		.grid-container {
 		  grid-template-columns: 1fr;
 		}
-	  }
+		
+	}
+	@media screen and (min-width: 768px) and  (max-width: 1024x) {
+	.tableauViz{
+		width: 600px !important;
+	} 
+}
+
+@media screen and (max-width: 1024px) {
+	.tableauViz{
+		width: 850px !important;
+	} 
+	
+}
