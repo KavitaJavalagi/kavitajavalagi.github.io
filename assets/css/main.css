@@ -3981,15 +3981,22 @@ h1{
 		}
 		
 	}
-	@media screen and (min-width: 768px) and  (max-width: 1024x) {
+	@media screen and (min-width: 768px) and  (max-width: 1023px) {
 	.tableauViz{
 		width: 600px !important;
 	} 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) and  (max-width: 1440px) {
 	.tableauViz{
 		width: 850px !important;
+	} 
+	
+}
+
+@media screen and (min-width: 1440px) {
+	.tableauViz{
+		width: 1000px !important;
 	} 
 	
 }

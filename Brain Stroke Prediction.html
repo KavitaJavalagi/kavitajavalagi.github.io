@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Tranquil AI</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<button
+				type="button"
+				class="btn btn-danger btn-floating btn-lg"
+				id="btn-back-to-top"
+				> Top
+		  <i class="fa fa-chevron-up"></i>
+		</button>
+				<!-- Header -->
+					<header id="header">
+						<h1>Brain Stroke Prediction using Machine Learning Techniques</h1>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<!-- <span class="image main"><img src="images/Home Page img.jpg" alt="" /></span> -->
+								<blockquote>The World Health Organization (WHO) reports that stroke is the second most common cause of death worldwide, accounting for around 11% of all the fatalaties.</blockquote>
+								<h2>Problem Statement</h2>
+								<p>Brain stroke is a leading cause of disability and mortality worldwide, with early detection and treatment being critical to improve outcomes. However, accurately predicting the likelihood of stroke can be a challenging task for medical professionals. Our goal is to develop an accurate and reliable model that can assist healthcare providers in identifying patients at high risk of stroke and implementing preventive measures.</p>
+								<h2>Solution</h2>
+								<p>Our solution involves using data analysis methods to build a predictive model for brain strokes. This model will learn from patient information, including things like age, medical history, lifestyle, and test results. By picking out the most important factors, we'll create a model that helps doctors find people with a higher chance of having a stroke. This way, doctors can step in early and improve the outcomes for patients.</p>
+								<h2>Data Sources</h2>
+								<p>The dataset for this project is created by Federico Soriano and extracted from <a href="https://www.kaggle.com/fedesoriano/stroke-prediction-dataset">Kaggle</a> to predict whether a patient is likely to get stroke based on the given attributes.</p>
+								<h2>Data Exploration</h2>
+								<p>A casual glance at the dataset reveals that age is a key factor that increases the risk of getting a stroke. The risk of stroke increases with age, and it is more pronounced after age 50. </p>
+								<div class='tableauPlaceholder' id='viz1691250467081' style='position: relative'><noscript><a href='#'><img alt='Stroke Prediction Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StrokePrediction_16860972202790&#47;StrokePredictionDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='StrokePrediction_16860972202790&#47;StrokePredictionDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StrokePrediction_16860972202790&#47;StrokePredictionDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1691250467081');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='600px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='600px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='977px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+								<h2>Techniques Used </h2>
+								<p>This is an example of a complex, non-linear, classification problem that still requires more explainability. We decided to use 4 techniques to understand which model can give us moderate accuracy and high explainability.
+									The cleaned data sheet was used as the training and validation dataset. The split was kept at 60:40 to ensure adequate data for training. Stroke (yes/no) is the target variable, while the rest are independent variables (age, glucose level, hypertension etc.). 
+									We used Azure ML studio and Heuristic Lab (for GA) to create the models.</p>	
+								<h3>Logistic Regression</h3>
+								<p>Logistic regression is a widely used statistical method for predicting binary outcomes, due to its simplicity, flexibility, robustness. We used logistic regression for this problem because it can perform well, especially when the predictors are relatively independent of each other.</p>
+								<h3>Decision Tree</h3>
+								<p>Decision trees are popular machine learning techniques often used for classification problems. We used the decision tree for this problem, as it provides a clear and intuitive representation of the decision-making process, thus making it easy to understand and interpret the output. While it can be less effective for a problem where the relationships between different risk factors can be complex and non-linear, we selected this technique because it has high explainability. </p>
+								<h3>Neural Network</h3>
+								<p>We used neural networks because they can capture complex non-linear relationships between the predictor variables and the target variable. Since this data is sufficiently complex and one of the objectives is to achieve high predictive accuracy, a neural network may be a suitable choice. However, neural networks can be harder to interpret and explain, which could be a disadvantage. </p>
+								<h3>Genetic Algorithms</h3>
+								<p>We used GA based on the assumption that it can use natural selection to figure out the right way to model this dataset. However, since GA is predominantly used for optimization problems and can be difficult to interpret and explain, which may be a disadvantage in certain contexts, such as in medical diagnosis, it could be less effective.</p>
+								<h2>Recommendations</h2>
+							<p class="edu">Using a decision tree:</p>
+							<p>Patients are the primary beneficiaries of this analysis. Early detection can help them take preventive measures such as making lifestyle changes or taking appropriate medications to reduce the risk of stroke. So, when the analysis is done and focused on the patients, it is imperative to focus on explainability rather than accuracy. A decision tree is the right model in this context.</p>
+						<p class="edu">Using a neural network:</p>
+						<p>At the other end of the spectrum are doctors and hospitals. While doctors need a certain measure of explainability, they can use these results for starting preventive care to their patients. Hospitals can use this data to understand where to allocate resources, educate patients about the potential risk factors, and invest in medical technology that can help them diagnose the condition early. For such cases, we can take a hit on explainability to focus on high accuracy. A neural network is the right model in this case.</p>
+						</section>
+
+					</div>
+					
+								<!-- Footer -->
+								<footer id="footer">
+									<ul class="actions">
+										<li><a href="index.html" class="button"><i class="fa fa-chevron-left"></i>  Go back</a></li>
+									</ul>
+									<section class="copyright">
+										<ul class="icons footericons">
+											<li><a target="_blank" href="https://www.linkedin.com/in/kavita-javalagi/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+											<li><a target="_blank" href="https://github.com/KavitaJavalagi" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+											<li><a target="_blank" href="https://www.instagram.com/jkavita_" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+										</ul>
+									</section>
+									
+									<p class="copyright">&copy;Kavita Javalagi | Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+			
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
